@@ -1,0 +1,8 @@
+package com.investsense.dto;
+
+public class AuthDtos {
+    public record RegisterRequest(String name, String email, String password) {}
+    public record LoginRequest(String email, String password) {}
+    public record UserResponse(Long id, String name, String email) {}
+    public record MessageResponse(String message) {}
+}
